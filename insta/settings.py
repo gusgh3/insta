@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'posts',
-    'accouts',
+    'accounts',
     'bootstrap5',
 ]
 
@@ -130,3 +130,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 #사진을 접근할 수 있는 경로 설정(미디어 경로를 처리할 URL)
 MEDIA_URL = '/media/'
+
+AUTH_USER_MODEL = 'accounts.User'
